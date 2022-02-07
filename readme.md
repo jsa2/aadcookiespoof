@@ -2,11 +2,12 @@
 
 I made this client to test various features of [Azure AD Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection). 
 
-📑 Based on testing it requires some 30 days of data, before any alerts will fire from replayed cookies
+📑 Based on testing it requires some 30 days of data before any alerts will fire from replayed cookies
 
 **Example**
 
 https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk
+
 
 *Unfamiliar sign-in properties can be detected on both interactive and non-interactive sign-ins. When this detection is detected on non-interactive sign-ins, it deserves increased scrutiny due to the risk of token replay attacks.*
 
