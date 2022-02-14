@@ -2,7 +2,10 @@
 
 I made this client to test various features of [Azure AD Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection). 
 
-📑 Based on testing it requires some 30 days of data before any alerts will fire from replayed cookies
+📑 Based on testing it requires some 10-30 days of data before any alerts will fire from replayed cookies
+
+<img width="429" alt="image" src="https://user-images.githubusercontent.com/58001986/153801573-782f7ee7-f28c-4103-9218-4db34a30a528.png">
+
 
 **Example**
 
