@@ -44,7 +44,7 @@ Uses the ESTSAUTH cookie for non device-SSO flow (Device SSO cookies require dif
   
 
 ## Spoofing
-From any browser, copy the **FIRST** occurence of ESTSAUTH cookie with fresh sign-in (use inPrivate browser to ensure no device flows are used)
+From any browser perform fresh sign-in, then copy the **FIRST** occurence of ESTSAUTH cookie with fresh sign-in (use inPrivate browser to ensure no device flows are used, and no existing session is active)
 
 ⚠️ Ensure you have MFA requirements satisified in the request if you plan to replay it from location that requires MFA. Otherwise replay from Cloud Shell will fail.
 
