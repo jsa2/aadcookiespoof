@@ -37,7 +37,7 @@ var {data} = await axios(`https://login.microsoftonline.com/organizations/oauth2
 
 var authCode = data.split('name=\"code\" value=\"')[1].split('" />')[0]
 
-var payLoad =`curl --write-out '%{json}' 'https://login.microsoftonline.com/organizations/oauth2/v2.0/token' \
+var payLoad =`curl  'https://login.microsoftonline.com/organizations/oauth2/v2.0/token' \
   -H 'Connection: keep-alive' \
   -H 'User-Agent: ${userAgent}' \
   -H 'sec-ch-ua-platform: "Hacker"' \
