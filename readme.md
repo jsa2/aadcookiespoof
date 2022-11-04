@@ -46,6 +46,10 @@ Uses the ESTSAUTH cookie for non device-SSO flow (Device SSO cookies require dif
 ## Spoofing
 From any browser perform fresh sign-in via https://office.com, then copy the **FIRST** occurence of ESTSAUTH cookie with fresh sign-in (use inPrivate browser to ensure no device flows are used, and no existing session is active)
 
+(If you are doing MFA get the token from the /SAS/ProcessAuth -step)
+
+![image](https://user-images.githubusercontent.com/58001986/199920119-9325edc1-fbea-4d01-b21b-70e15ea1368b.png)
+
 ⚠️ Ensure you have MFA requirements satisified in the request if you plan to replay it from location that requires MFA. Otherwise replay from Cloud Shell will fail.
 
 ![image](https://user-images.githubusercontent.com/58001986/152730258-ae782584-095a-400d-bbee-7532f96f6d8e.png)
